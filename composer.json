@@ -1,0 +1,20 @@
+{
+    "name": "admingate/plugin-management",
+    "description": "Plugin management package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Admingate\\PluginManagement\\": "src"
+        }
+    },
+    "require": {
+        "admingate/admingate": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Admingate\\PluginManagement\\Providers\\PluginManagementServiceProvider"
+            ]
+        }
+    }
+}
